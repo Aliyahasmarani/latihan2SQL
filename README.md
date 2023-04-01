@@ -116,5 +116,86 @@ Perintah nya sama seperti diatas, hanya saja diganti menjadi UNIQUE KEY
 ![gambar13](gambar/13.png)
 
 
+# EVALUASI DAN PERTANYAAN
+
+### Tulis semua perintah-perintah SQL percobaan di pdf praktikum 1 beserta outputnya!
+
+SQL DDL
+
+### * Membuat Database
+
+`CREATE DATABASE latihan1;`
+
+![gambara](gambar/a.png)
+
+### * Membuat Tabel
+
+`CREATE TABLE siswa (nama VARCHAR (100), alamat TEXT);`
+
+![gambarb](gambar/b.png)
+
+### * Menambah Kolom
+
+`ALTER TABLE biodata ADD COLUMN ketengan TEXT AFTER alamat;`
+
+Di perintah yang bapak kasih ada kesalahan yaitu di nama tabelnya. seharusnya siswa bukan biodata.
+
+![gambarc](gambar/c.png)
+
+### * Menambah kolom diawal
+
+`ALTER TABLE siswa ADD COLUMN id INT FIRST;`
+
+![gambard](gambar/d.png)
+
+### * Mengubah nama kolom
+
+`ALTER TABLE siswa CHANGE COLUMN keterangan TO kelas;`
+
+Diperintah ini ada kesalahan, seharusnya yang benar yaitu ini `ALTER TABLE siswa CHANGE keterangan kelas TEXT;` 
+
+![gambare](gambar/e.png)
+
+### * Mengubah tipe data
+
+`ALTER TABLE siswa MODIFY COLUMN kelas VARCHAN(10);`
+
+![gambarf](gambar/f.png)
+
+### * Menghapus kolom
+
+`ALTER TABLE siswa DROP COLUMN kelas;`
+
+![gambarg](gambar/g.png)
+
+### * Menambah PRIMARY KEY
+
+`ALTER TABLE siswa ADD PRIMARY KEY(id);`
+
+![gambarh](gambar/h.png)
+
+### * Menambah CONSTRAINT
+
+`ALTER TABLE siswa ADD CONSTRAINT pk_sisiwa PRIMARY KEY(id);`
+
+Disini sebenarnya tidak bermasalah jika PRIMARY KEY nya kita hapus terlebih dahulu. Jadinya saya coba ganti PRIMARY KEY dengan UNIQUE KEY.
+
+![gambari](gambar/i.png)
+
+### * Menghapus PRIMARY KEY
+
+`ALTER TABLE siswa DROP PRIMARY KEY;`
+
+![gambarj](gambar/j.png)
+
+### * Menghapus CONSTRAINT
+
+`ALTER TABLE siswa DROP CONSTRAINT pk_siswa;`
+
+![gambarj](gambar/j.png)
+
+
+
+
 
 
