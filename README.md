@@ -193,7 +193,7 @@ Disini sebenarnya tidak bermasalah jika PRIMARY KEY nya kita hapus terlebih dahu
 `ALTER TABLE siswa DROP CONSTRAINT pk_siswa;`
 
 ![gambarj](gambar/j.png)
-
+l
 
 
 
